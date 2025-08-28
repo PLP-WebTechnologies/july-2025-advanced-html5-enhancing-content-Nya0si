@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Page & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+      line-height: 1.6;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 1em;
+      padding: 1em;
+      border: 1px solid #aaa;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 0.5em;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content & Form Showcase</h1>
+    <p>This page demonstrates advanced HTML5 content elements and a fully-featured form with native validation.</p>
+  </header>
+
+  <section>
+    <h2>📋 Features List</h2>
+    <ul>
+      <li>Semantic HTML5 structure</li>
+      <li>Embedded media elements</li>
+      <li>Accessible and validated form</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📊 Sample Data Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lists</td>
+          <td>Organize content clearly</td>
+        </tr>
+        <tr>
+          <td>Tables</td>
+          <td>Display structured data</td>
+        </tr>
+        <tr>
+          <td>Forms</td>
+          <td>Collect user input efficiently</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>🎬 Embedded Media</h2>
+    <figure>
+      <img src="https://via.placeholder.com/400x200" alt="Sample Image" />
+      <figcaption>Example of an embedded image</figcaption>
+    </figure>
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <video width="400" controls>
+      <source src="sample-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>📝 User Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="John Doe" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="example@domain.com" />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,}" placeholder="Min 5 alphanumeric characters" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6" />
+
+        <label for="confirm">Confirm Password:</label>
+        <input type="password" id="confirm" name="confirm" required minlength="6" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">
